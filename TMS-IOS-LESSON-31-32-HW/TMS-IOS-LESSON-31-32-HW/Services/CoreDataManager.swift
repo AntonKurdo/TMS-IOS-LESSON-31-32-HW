@@ -4,7 +4,7 @@ import CoreData
 class CoreDataManager {
     static let shared = CoreDataManager()
     
-    var cars: [Car] = []
+    var cars: [Car_CoreData] = []
     
     private init() {
         fetchAllCars()
@@ -33,13 +33,14 @@ class CoreDataManager {
     }
     
     func fetchAllCars() {
-        if let cars = try? persistentContainer.viewContext.fetch(Car.fetchRequest()) {
+        if let cars = try? persistentContainer.viewContext.fetch(Car_CoreData.fetchRequest()) {
+            print(cars)
             self.cars = cars
         }
     }
     
     func addCar(mark: String, model: String, year: String, maxSpeed: String, completion: (() -> ())) {
-        let car = Car(context: persistentContainer.viewContext)
+        let car = Car_CoreData(context: persistentContainer.viewContext)
         car.id = UUID().uuidString
         car.mark = mark
         car.model = model
@@ -51,8 +52,9 @@ class CoreDataManager {
         completion()
     }
     
-    func removeCar(car: Car, completion: (() -> ())) {
-        car.removeCar()
+    func removeCar(car: AnyObject, completion: (() -> ())) {
+        let innerCar = car as! Car_CoreData
+        innerCar.removeCar()
         cars.removeAll { c in
             c.id == car.id
         }

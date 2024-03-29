@@ -70,8 +70,7 @@ class AddScreenViewController: UIViewController {
         
         let action = UIAction {_ in
             
-            CoreDataManager.shared.addCar(mark: self.markTextField.text ?? "", model: self.modelTextField.text ?? "", year: self.yearTextField.text ?? "", maxSpeed: self.maxSpeedTextField.text ?? "") {
-                print("HEllo")
+            DBManager.service.addCar(mark: self.markTextField.text ?? "", model: self.modelTextField.text ?? "", year: self.yearTextField.text ?? "", maxSpeed: self.maxSpeedTextField.text ?? "") {
             }
             self.reloadData?()
             self.dismiss(animated: true, completion: nil)

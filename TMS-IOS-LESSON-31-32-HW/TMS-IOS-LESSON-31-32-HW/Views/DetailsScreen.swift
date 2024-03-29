@@ -1,9 +1,7 @@
 import UIKit
 
 class DetailsScreenViewController: UIViewController {
-    
-    
-    private var car: Car?
+    private var car: AnyObject?
     private var modelLabel = Constructor.createLabel(text: "Model:")
     private var yearLabel = Constructor.createLabel(text: "Year:")
     private var maxSpeedLabel = Constructor.createLabel(text: "Maximum speed:")
@@ -20,8 +18,8 @@ class DetailsScreenViewController: UIViewController {
     
     var reloadData: (() -> ())?
     
-    func configure(car: Car) {
-        navigationItem.title = car.mark.count > 0 ? car.mark.uppercased() : "Details"
+    func configure(car: CarItem) {
+//        navigationItem.title = car.mark.count > 0 ? car.mark.uppercased() : "Details"
         
         self.car = car
         modelLabel.text = "Model: \(car.model.count > 0 ?  car.model : "Unknown")"
@@ -62,7 +60,7 @@ class DetailsScreenViewController: UIViewController {
         let action = UIAction {_ in 
             guard let car = self.car else {return}
             self.navigationController?.popViewController(animated: true)
-            CoreDataManager.shared.removeCar(car: car) {
+            DBManager.service.removeCar(car: car) {
                 self.reloadData?()
             }
         }

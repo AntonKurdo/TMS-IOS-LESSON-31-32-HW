@@ -1,14 +1,13 @@
 import Foundation
 import CoreData
 
-
-public class Car: NSManagedObject {
+public class Car_CoreData: NSManagedObject {
 
 }
 
-extension Car {
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<Car> {
-        return NSFetchRequest<Car>(entityName: "Car")
+extension Car_CoreData {
+    @nonobjc public class func fetchRequest() -> NSFetchRequest<Car_CoreData> {
+        return NSFetchRequest<Car_CoreData>(entityName: "Car_CoreData")
     }
     
     @NSManaged public var id: String
@@ -19,7 +18,7 @@ extension Car {
 
 }
 
-extension Car : Identifiable {
+extension Car_CoreData : Identifiable {
     func removeCar() {
         managedObjectContext?.delete(self)
         try? managedObjectContext?.save()

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040AA4C72BB70BB000C13135 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AA4C62BB70BB000C13135 /* DBManager.swift */; };
+		040AA4CA2BB70D2300C13135 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 040AA4C92BB70D2300C13135 /* Realm */; };
+		040AA4CC2BB70D2300C13135 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 040AA4CB2BB70D2300C13135 /* RealmSwift */; };
+		040AA4CE2BB70D8500C13135 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AA4CD2BB70D8500C13135 /* RealmManager.swift */; };
+		040AA4D02BB70E1900C13135 /* Car+RealmDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AA4CF2BB70E1900C13135 /* Car+RealmDataClass.swift */; };
 		041534BD2BB4921B006E231F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041534BC2BB4921B006E231F /* AppDelegate.swift */; };
 		041534BF2BB4921B006E231F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041534BE2BB4921B006E231F /* SceneDelegate.swift */; };
 		041534C12BB4921B006E231F /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041534C02BB4921B006E231F /* MainScreen.swift */; };
@@ -23,6 +28,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		040AA4C62BB70BB000C13135 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		040AA4CD2BB70D8500C13135 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		040AA4CF2BB70E1900C13135 /* Car+RealmDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Car+RealmDataClass.swift"; sourceTree = "<group>"; };
 		041534B92BB4921B006E231F /* TMS-IOS-LESSON-31-32-HW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TMS-IOS-LESSON-31-32-HW.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		041534BC2BB4921B006E231F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		041534BE2BB4921B006E231F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				040AA4CC2BB70D2300C13135 /* RealmSwift in Frameworks */,
+				040AA4CA2BB70D2300C13135 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				04FCAAD02BB6FC68006E3CAF /* Car+CoreDataClass.swift */,
+				040AA4CF2BB70E1900C13135 /* Car+RealmDataClass.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -132,6 +143,8 @@
 			isa = PBXGroup;
 			children = (
 				04FCAAD52BB6FDEB006E3CAF /* CoreDataManager.swift */,
+				040AA4C62BB70BB000C13135 /* DBManager.swift */,
+				040AA4CD2BB70D8500C13135 /* RealmManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -152,6 +165,10 @@
 			dependencies = (
 			);
 			name = "TMS-IOS-LESSON-31-32-HW";
+			packageProductDependencies = (
+				040AA4C92BB70D2300C13135 /* Realm */,
+				040AA4CB2BB70D2300C13135 /* RealmSwift */,
+			);
 			productName = "TMS-IOS-LESSON-31-32-HW";
 			productReference = 041534B92BB4921B006E231F /* TMS-IOS-LESSON-31-32-HW.app */;
 			productType = "com.apple.product-type.application";
@@ -180,6 +197,9 @@
 				Base,
 			);
 			mainGroup = 041534B02BB4921A006E231F;
+			packageReferences = (
+				040AA4C82BB70D2300C13135 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 041534BA2BB4921B006E231F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -206,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				040AA4CE2BB70D8500C13135 /* RealmManager.swift in Sources */,
 				041534D92BB49A69006E231F /* ViewController+ext.swift in Sources */,
 				041534C12BB4921B006E231F /* MainScreen.swift in Sources */,
 				04D0F1292BB6E17600360508 /* DetailsScreen.swift in Sources */,
@@ -213,8 +234,10 @@
 				041534BD2BB4921B006E231F /* AppDelegate.swift in Sources */,
 				041534C72BB4921B006E231F /* TMS_IOS_LESSON_31_32_HW.xcdatamodeld in Sources */,
 				04FCAAD22BB6FC68006E3CAF /* Car+CoreDataClass.swift in Sources */,
+				040AA4C72BB70BB000C13135 /* DBManager.swift in Sources */,
 				041534D62BB49757006E231F /* AddScreen.swift in Sources */,
 				04D0F1272BB6D3D700360508 /* KeyboardHelper.swift in Sources */,
+				040AA4D02BB70E1900C13135 /* Car+RealmDataClass.swift in Sources */,
 				041534BF2BB4921B006E231F /* SceneDelegate.swift in Sources */,
 				04FCAAD62BB6FDEB006E3CAF /* CoreDataManager.swift in Sources */,
 			);
@@ -429,6 +452,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		040AA4C82BB70D2300C13135 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		040AA4C92BB70D2300C13135 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 040AA4C82BB70D2300C13135 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		040AA4CB2BB70D2300C13135 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 040AA4C82BB70D2300C13135 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		041534C52BB4921B006E231F /* TMS_IOS_LESSON_31_32_HW.xcdatamodeld */ = {
