@@ -7,25 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040AA4C72BB70BB000C13135 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AA4C62BB70BB000C13135 /* DBManager.swift */; };
+		040AA4CA2BB70D2300C13135 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 040AA4C92BB70D2300C13135 /* Realm */; };
+		040AA4CC2BB70D2300C13135 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 040AA4CB2BB70D2300C13135 /* RealmSwift */; };
+		040AA4CE2BB70D8500C13135 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AA4CD2BB70D8500C13135 /* RealmManager.swift */; };
+		040AA4D02BB70E1900C13135 /* Car+RealmDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040AA4CF2BB70E1900C13135 /* Car+RealmDataClass.swift */; };
 		041534BD2BB4921B006E231F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041534BC2BB4921B006E231F /* AppDelegate.swift */; };
 		041534BF2BB4921B006E231F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041534BE2BB4921B006E231F /* SceneDelegate.swift */; };
-		041534C12BB4921B006E231F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041534C02BB4921B006E231F /* ViewController.swift */; };
-		041534C42BB4921B006E231F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041534C22BB4921B006E231F /* Main.storyboard */; };
+		041534C12BB4921B006E231F /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041534C02BB4921B006E231F /* MainScreen.swift */; };
 		041534C72BB4921B006E231F /* TMS_IOS_LESSON_31_32_HW.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 041534C52BB4921B006E231F /* TMS_IOS_LESSON_31_32_HW.xcdatamodeld */; };
 		041534C92BB4921D006E231F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041534C82BB4921D006E231F /* Assets.xcassets */; };
 		041534CC2BB4921D006E231F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041534CA2BB4921D006E231F /* LaunchScreen.storyboard */; };
+		041534D62BB49757006E231F /* AddScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041534D52BB49757006E231F /* AddScreen.swift */; };
+		041534D92BB49A69006E231F /* ViewController+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041534D82BB49A69006E231F /* ViewController+ext.swift */; };
+		04D0F1252BB6CBE700360508 /* Constructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D0F1242BB6CBE700360508 /* Constructor.swift */; };
+		04D0F1272BB6D3D700360508 /* KeyboardHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D0F1262BB6D3D700360508 /* KeyboardHelper.swift */; };
+		04D0F1292BB6E17600360508 /* DetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D0F1282BB6E17600360508 /* DetailsScreen.swift */; };
+		04FCAAD22BB6FC68006E3CAF /* Car+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FCAAD02BB6FC68006E3CAF /* Car+CoreDataClass.swift */; };
+		04FCAAD62BB6FDEB006E3CAF /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FCAAD52BB6FDEB006E3CAF /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		040AA4C62BB70BB000C13135 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		040AA4CD2BB70D8500C13135 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		040AA4CF2BB70E1900C13135 /* Car+RealmDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Car+RealmDataClass.swift"; sourceTree = "<group>"; };
 		041534B92BB4921B006E231F /* TMS-IOS-LESSON-31-32-HW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TMS-IOS-LESSON-31-32-HW.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		041534BC2BB4921B006E231F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		041534BE2BB4921B006E231F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		041534C02BB4921B006E231F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		041534C32BB4921B006E231F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		041534C02BB4921B006E231F /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		041534C62BB4921B006E231F /* TMS_IOS_LESSON_31_32_HW.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TMS_IOS_LESSON_31_32_HW.xcdatamodel; sourceTree = "<group>"; };
 		041534C82BB4921D006E231F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		041534CB2BB4921D006E231F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		041534CD2BB4921D006E231F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		041534D52BB49757006E231F /* AddScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddScreen.swift; sourceTree = "<group>"; };
+		041534D82BB49A69006E231F /* ViewController+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+ext.swift"; sourceTree = "<group>"; };
+		04D0F1242BB6CBE700360508 /* Constructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constructor.swift; sourceTree = "<group>"; };
+		04D0F1262BB6D3D700360508 /* KeyboardHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHelper.swift; sourceTree = "<group>"; };
+		04D0F1282BB6E17600360508 /* DetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsScreen.swift; sourceTree = "<group>"; };
+		04FCAAD02BB6FC68006E3CAF /* Car+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Car+CoreDataClass.swift"; sourceTree = "<group>"; };
+		04FCAAD52BB6FDEB006E3CAF /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				040AA4CC2BB70D2300C13135 /* RealmSwift in Frameworks */,
+				040AA4CA2BB70D2300C13135 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,16 +80,73 @@
 		041534BB2BB4921B006E231F /* TMS-IOS-LESSON-31-32-HW */ = {
 			isa = PBXGroup;
 			children = (
-				041534BC2BB4921B006E231F /* AppDelegate.swift */,
-				041534BE2BB4921B006E231F /* SceneDelegate.swift */,
-				041534C02BB4921B006E231F /* ViewController.swift */,
-				041534C22BB4921B006E231F /* Main.storyboard */,
-				041534C82BB4921D006E231F /* Assets.xcassets */,
-				041534CA2BB4921D006E231F /* LaunchScreen.storyboard */,
-				041534CD2BB4921D006E231F /* Info.plist */,
+				04FCAAD42BB6FDDA006E3CAF /* Services */,
+				04D0F1232BB6CBD700360508 /* Utils */,
+				041534DA2BB49C6D006E231F /* Models */,
+				041534D72BB49A52006E231F /* Extensions */,
+				041534D42BB49721006E231F /* Views */,
+				041534D32BB49373006E231F /* Resources */,
 				041534C52BB4921B006E231F /* TMS_IOS_LESSON_31_32_HW.xcdatamodeld */,
 			);
 			path = "TMS-IOS-LESSON-31-32-HW";
+			sourceTree = "<group>";
+		};
+		041534D32BB49373006E231F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				041534CD2BB4921D006E231F /* Info.plist */,
+				041534BE2BB4921B006E231F /* SceneDelegate.swift */,
+				041534CA2BB4921D006E231F /* LaunchScreen.storyboard */,
+				041534C82BB4921D006E231F /* Assets.xcassets */,
+				041534BC2BB4921B006E231F /* AppDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		041534D42BB49721006E231F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				041534C02BB4921B006E231F /* MainScreen.swift */,
+				04D0F1282BB6E17600360508 /* DetailsScreen.swift */,
+				041534D52BB49757006E231F /* AddScreen.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		041534D72BB49A52006E231F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				041534D82BB49A69006E231F /* ViewController+ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		041534DA2BB49C6D006E231F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04FCAAD02BB6FC68006E3CAF /* Car+CoreDataClass.swift */,
+				040AA4CF2BB70E1900C13135 /* Car+RealmDataClass.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		04D0F1232BB6CBD700360508 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				04D0F1242BB6CBE700360508 /* Constructor.swift */,
+				04D0F1262BB6D3D700360508 /* KeyboardHelper.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		04FCAAD42BB6FDDA006E3CAF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				04FCAAD52BB6FDEB006E3CAF /* CoreDataManager.swift */,
+				040AA4C62BB70BB000C13135 /* DBManager.swift */,
+				040AA4CD2BB70D8500C13135 /* RealmManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +165,10 @@
 			dependencies = (
 			);
 			name = "TMS-IOS-LESSON-31-32-HW";
+			packageProductDependencies = (
+				040AA4C92BB70D2300C13135 /* Realm */,
+				040AA4CB2BB70D2300C13135 /* RealmSwift */,
+			);
 			productName = "TMS-IOS-LESSON-31-32-HW";
 			productReference = 041534B92BB4921B006E231F /* TMS-IOS-LESSON-31-32-HW.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +197,9 @@
 				Base,
 			);
 			mainGroup = 041534B02BB4921A006E231F;
+			packageReferences = (
+				040AA4C82BB70D2300C13135 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 041534BA2BB4921B006E231F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -130,7 +216,6 @@
 			files = (
 				041534CC2BB4921D006E231F /* LaunchScreen.storyboard in Resources */,
 				041534C92BB4921D006E231F /* Assets.xcassets in Resources */,
-				041534C42BB4921B006E231F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,24 +226,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				041534C12BB4921B006E231F /* ViewController.swift in Sources */,
+				040AA4CE2BB70D8500C13135 /* RealmManager.swift in Sources */,
+				041534D92BB49A69006E231F /* ViewController+ext.swift in Sources */,
+				041534C12BB4921B006E231F /* MainScreen.swift in Sources */,
+				04D0F1292BB6E17600360508 /* DetailsScreen.swift in Sources */,
+				04D0F1252BB6CBE700360508 /* Constructor.swift in Sources */,
 				041534BD2BB4921B006E231F /* AppDelegate.swift in Sources */,
 				041534C72BB4921B006E231F /* TMS_IOS_LESSON_31_32_HW.xcdatamodeld in Sources */,
+				04FCAAD22BB6FC68006E3CAF /* Car+CoreDataClass.swift in Sources */,
+				040AA4C72BB70BB000C13135 /* DBManager.swift in Sources */,
+				041534D62BB49757006E231F /* AddScreen.swift in Sources */,
+				04D0F1272BB6D3D700360508 /* KeyboardHelper.swift in Sources */,
+				040AA4D02BB70E1900C13135 /* Car+RealmDataClass.swift in Sources */,
 				041534BF2BB4921B006E231F /* SceneDelegate.swift in Sources */,
+				04FCAAD62BB6FDEB006E3CAF /* CoreDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		041534C22BB4921B006E231F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				041534C32BB4921B006E231F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		041534CA2BB4921D006E231F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -298,10 +385,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N3LRJV66ML;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "TMS-IOS-LESSON-31-32-HW/Info.plist";
+				INFOPLIST_FILE = "TMS-IOS-LESSON-31-32-HW/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -326,10 +412,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N3LRJV66ML;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "TMS-IOS-LESSON-31-32-HW/Info.plist";
+				INFOPLIST_FILE = "TMS-IOS-LESSON-31-32-HW/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -367,6 +452,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		040AA4C82BB70D2300C13135 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		040AA4C92BB70D2300C13135 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 040AA4C82BB70D2300C13135 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		040AA4CB2BB70D2300C13135 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 040AA4C82BB70D2300C13135 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		041534C52BB4921B006E231F /* TMS_IOS_LESSON_31_32_HW.xcdatamodeld */ = {
